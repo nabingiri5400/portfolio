@@ -60,10 +60,10 @@ body {
     color: white;
 }
 
-/* ----- MOBILE STYLES ----- */
 @media (max-width: 768px) {
     .toggle-btn {
-        display: block; /* show toggle icon on mobile */
+        display: block;
+        margin-left: auto;
     }
 
     .nav-links {
