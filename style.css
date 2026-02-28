@@ -25,23 +25,41 @@ body {
     box-shadow: 0 2px 20px rgba(0,0,0,0.1);
     display: flex;
     justify-content: flex-end;
-    gap: 20px;
-    flex-wrap: wrap;
+    align-items: center;
+}
+.toggle-btn {
+    font-size: 26px;
+    cursor: pointer;
 }
 
-.navbar a {
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.nav-links a {
     color: #333;
     text-decoration: none;
     font-weight: 600;
-    padding: 8px 16px;
+    padding: 10px 20px;
     border-radius: 25px;
-    transition: all 0.3s;
+    transition: 0.3s;
 }
 
-.navbar a:hover {
+.nav-links a:hover {
     background: #667eea;
     color: white;
-    transform: translateY(-2px);
+}
+
+.nav-links.active {
+    display: flex;
 }
 
 /* ===== MAIN CONTAINER ===== */
